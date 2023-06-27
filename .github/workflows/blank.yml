@@ -6,12 +6,12 @@ on:
   pull_request:
     branches: [ develop ]
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-      steps:
-      - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v2
 
-      - name: Run a one-line script
-        run: echo Heelo, world!
+    - name: Run a one-line script
+      run: echo Heelo, world!
